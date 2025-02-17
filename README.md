@@ -16,22 +16,9 @@ To get started with this project, follow these steps:
 - MySQL Server 9.0
 - MySQL Workbench (optional, for database management)
 
-3. **Database Setup**:
-- Create a database named `registration`.
-
-- Create table named `users`
-    CREATE TABLE Users (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    username NVARCHAR(50) NOT NULL UNIQUE,
-    password NVARCHAR(255) NOT NULL,
-    email NVARCHAR(255) NOT NULL UNIQUE
-    );
-
+3. **Update in project**:
 - Update `application.properties` with your database configuration:
   
-  spring.datasource.url=jdbc:mysql://localhost:3306/registration
-  spring.datasource.username=<your_database_username>
-  spring.datasource.password=<your_database_password>
   springdoc.api-docs.path=/api-docs
   springdoc.swagger-ui.path=/swagger-ui.html  
 
